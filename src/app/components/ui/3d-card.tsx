@@ -123,8 +123,9 @@ export const CardItem = ({
   const [isMouseEntered] = useMouseEnter();
 
   useEffect(() => {
-    handleAnimations();
-  }, [isMouseEntered]);
+    -    handleAnimations();
+    +    handleAnimations();
+      }, [isMouseEntered]);
 
   const handleAnimations = () => {
     if (!ref.current) return;
