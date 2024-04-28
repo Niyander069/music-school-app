@@ -132,10 +132,12 @@ export const CardItem = ({
     }
   }, [isMouseEntered, translateX, translateY, translateZ, rotateX, rotateY, rotateZ]);
   
+  
 
   useEffect(() => {
     handleAnimations();
-  }, [isMouseEntered]);
+  }, [isMouseEntered, handleAnimations]);
+  
   
   
 
